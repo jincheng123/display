@@ -1,17 +1,49 @@
 <html>
 <head>
 	<title>this is the project things</title>
-	<style type="text/css">	
+	<style type="text/css">
+
+		.wrapper {
+			width: 1200px;
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+		}	
+		
 		.orange {
 			background-color: orange;
 			width:100px;
 			height: 100px;
 			border-radius: 50%;
 		}
+
+		.prodemo .img {
+			display: inline-block;
+			box-shadow: 3px 3px 3px 3px #ddd;
+			margin-bottom: 8px;
+			border-radius: 10px;
+			background-size: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 720px;
+			height: 720px;
+			background-color: #ddd;
+		}
+
+
 	</style>
 </head>
 <body>
-	<div class="orange">
+	<div class="wrapper">
+		<!-- <div class="orange">
+		</div> -->
+		<div class="prodemo">
+			<div class="img" style="background-image:url(cha/1.jpg)"></div>
+			<div class="img" style="background-image:url(cha/2.jpg)"></div>
+			<div class="img" style="background-image:url(cha/3.jpg)"></div>
+			<div class="img" style="background-image:url(cha/4.jpg)"></div>
+			<div class="img" style="background-image:url(cha/4.jpg)"></div>
+		</div>
 	</div>
 </body>
 </html>
