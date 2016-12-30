@@ -1,1 +1,195 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>night sky</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="nightSky.css">
+	<style type="text/css">
+		
+		.wrapper {
+			z-index: 1000;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			overflow: scroll;
+		}
+
+		.wrapper .nav {
+			position: absolute;
+			left: 50px;
+			top: 50px;
+			width: 150px;
+			transition-duration: 0.6s;
+		}
+
+		ul {
+			color: #fff;
+		}
+
+		h1, h2, h3, p {
+		    margin: 0 0 10px;
+		    color: #fff;
+		    text-shadow: 1px 1px 1px #000;
+		}
+
+		.box {
+			background-color: #444;
+		    background: rgba(0,0,0,.6);
+		    padding: 20px;
+		    border-radius: 5px;
+		    margin-bottom: 20px;
+		}
+
+		.video-list{
+		    list-style: none;
+		    margin: 0 0 -10px;
+		    padding: 0;
+		    text-align: center;
+		}
+		.video-list li {
+		    margin-bottom: 10px;
+		    cursor: pointer;
+		}
+
+		.main {
+		    position: relative;
+		    margin: 50px 50px 440px 220px;
+		    min-width: 300px;
+		    -webkit-transition-duration: 0.6s;
+		    -moz-transition-duration: 0.6s;
+		    -ms-transition-duration: 0.6s;
+		    -o-transition-duration: 0.6s;
+		    transition-duration: 0.6s;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div id="road">
+		</div>
+		<div id="moon">
+		</div>
+		<div id="path">
+		   <div id="santa"></div>
+		</div>
+		<div id="snow">
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="nav box">
+			<ul class="video-list">
+				<li>我的简历</li>
+				<li>我的作品</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="box">
+				<h1 style="text-align: center;">关于我</h1>
+				<h2>安静下来做事的人·有前端基础·大量的P图</h2>
+				<p>
+					熟练掌握PS和CDR，在过去的一年里我做了大量的P图、茶和鞋的效果图以及部分设计，我有大量作品可展示并能现场做图测试并有前端基础。
+         
+              		我觉得自己是一个能安静下来做事的人，这次想跳槽，希望能找一家我喜欢和喜欢我的公司并贡献自己的能量。	
+
+				</p>
+				<p>
+
+ 					<label>姓名</label>
+ 					<span>张锦城</span>
+ 					<label>学    历</label>
+ 					<span>大专	</span><br/>
+ 					<label>联系方式：</label>
+ 					<a style="color:#fff;" href="tel:15011838896">15011838896</a><br/>
+ 					<label>邮    箱：</label>
+ 					<a style="color:#fff;" href="mailto:xdl_gz05@163.com  ">xdl_gz05@163.com</a>
+				</p>
+			</div>	
+
+			<div class="box">
+				<h2 style="text-align: center;">个人项目</h2>
+				<p>
+					【 项目一 】  仿淘我啦商城
+       				项目描述：淘我啦商城是一个类似淘宝的购物商城，用面向过程的方式写的一个淘我啦商城，跟着老师前后台全程参与，通过此次项目熟悉了html,css、mysql数据库和php后台功能的增删改查与数据的循环、遍历。
+				</p>
+				<p>
+					【 项目二 】  仿oppo商城
+					项目描述：oppo商城是一个B2C企业对个人的手机商城，用面向对象的方式采用tp框				   架写的一个oppo商城。我负责前台注册登录、个人中心，后台会员管理、					   用户评论4个模块。通过第二个项目的练习基本掌握tp框架的使用，熟悉					  了javascript脚本语言，json数据，对jQuery、Ajax也有运用。虽然能实现					  对数据的循环遍历与功能的增删改查但还需提升，其他没有参与的功能模块					  也不够熟悉。
+					责任描述：通过学习和两次项目的练习熟悉了php的大部分基础知识，虽然遇到不少难				   题但是通过查手册、问百度、请教老师基本都能解决问题并提升了自己的协				      调与抗压能力。
+				</p>
+			</div>
+			<div class="box">
+				<h2 style="text-align: center;">个人技能</h2>
+				<p style="text-align: center;">
+					<label>粤   语</label>
+					<span>良好</span><br/>
+					<label>国   语</label>
+					<span>良好</span><br/>
+					<label>英   语</label>
+					<span>一般</span><br/>
+					<label>其   他</label>
+					<span>C1牌照，会驾驶</span><br/>
+				</p>
+			</div>
+			<div class="box">
+				<h2 style="text-align: center;">教育经历</h2>
+				<p style="text-align: center;">
+					<label>在校时间：</label>
+					<span>2006.9-2008.5</span><br/>
+					<label>学校全称：</label>
+					<span>四川托普信息技术职业学院</span><br/>
+					<label>专    业：</label>
+					<span>数字城市规划与管理</span><br/>
+					<label>在校时间：</label>
+					<span>2015.6-2015.11</span><br/>
+					<label>学校全称：</label>
+					<span>广州兄弟连IT教育</span><br/>
+					<label>专    业：</label>
+					<span>php</span>
+				</p>
+			</div>
+			<div class="box">
+				<h2>工作经历：</h2>
+				<p>
+			  	   <label>工作时间：</label>
+			  	   <span>2009 /8--2013 /5</span><br/>
+			  	   <label>单    位：</label>
+			  	   <span>北京益普索广州分公司  </span><br/>
+			  	   <label>职    位：</label>
+			  	   <span>录入员</span><br/>
+			  	   <label>工作内容：</label>
+			  	   <span>问卷录入数据处理，协助督导用程序查错</span><br/>
+			  	   <label>工作时间：</label>
+			  	   <span>2014 /2--2014 /10</span><br/>
+			  	   <label>单    位：</label>
+			  	   <span>广州君彦生物科技有限公司</span>
+			  	   
+			  	   <span></span>
+			  	   <span></span>
+			  	   <label>职    位：</label>
+			  	   <span>电商/售后</span>
+			  	   <label></label>
+			  	   <label></label>
+			  	   
+			              
+			      
+			
+
+			      
+			      ：
+			      
+			工作内容：打单发货，金蝶录入，厂家的天猫、阿里管理，商家前后台css、js修改
+
+			工作时间：2016 /9—至今
+			      单    位：广州福道天下生物科技有限公司       
+			      职    位：美工/设计
+			工作内容：P图，制作拖鞋、茶盒、茶叶三折页的平面图和效果图，仁人好手机商城
+						  上的产品图、banner图以及部分设计
+					
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
