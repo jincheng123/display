@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>night sky</title>
@@ -80,7 +80,7 @@
 	<div class="wrapper">
 		<div class="nav box">
 			<ul class="video-list">
-				<li>我的简历</li>
+				<li id="intro">我的简历</li>
 				<li>我的作品</li>
 			</ul>
 		</div>
@@ -181,5 +181,11 @@
 			
 		</div>
 	</div>
+
+<script>
+	document.getElementById("intro").addEventListener("click",function(){
+		alert("this is the project");
+	})
+</script>
 </body>
 </html>
