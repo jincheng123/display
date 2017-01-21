@@ -89,6 +89,13 @@
 			display: inline-block;
 		}
 
+		.clearfix:after {
+			display: table;
+			content: '';
+			clear: both;
+		}
+
+
 
 	</style>
 </head>
@@ -110,12 +117,12 @@
 			<ul class="video-list" id="tabs">
 				<li data-id="myintro" onclick="toggleTabs('myintro')">我的简历</li>
 				<li data-id="mywork" onclick="toggleTabs('mywork')">我的作品</li>
-				<li style="padding:10px;border: 1px solid #fff;border-radius: 10px;">
+				<li style="padding:10px;border-radius: 10px;">
 					<img src="img/personal.jpg" style="display: block;width: 80px;margin: 0 auto;margin-bottom:12px;">
 					<div style="color:#fff;text-align:left" class="concat">
 						<!-- <h3>联系方式</h3> -->
-						<a href="mailto:xdl_gz05@163.com">xdl_gz05@163.com</a>
-						<a href="tel:15011838896">15011838896</a>
+						<!-- <a href="mailto:xdl_gz05@163.com">xdl_gz05@163.com</a>
+						<a href="tel:15011838896">15011838896</a> -->
 					</div>
 				</li>
 			</ul>
@@ -124,24 +131,21 @@
 			<div id="myintro" class="tab active" >	
 				<div class="box">
 					<h1 style="text-align: center;">个人资料</h1>
-					<h2>安静下来做事的人,有前端基础,大量的P图</h2>
-					<p>
-						熟练掌握PS和CDR，在过去的一年里我做了大量的P图、茶和鞋的效果图以及部分设计，我有大量作品可展示并能现场做图测试并有前端基础。
-	         
-	              		我觉得自己是一个能安静下来做事的人，这次想跳槽，希望能找一家我喜欢和喜欢我的公司并贡献自己的能量。	
-
-					</p>
-					<p>
-
-	 					<label>姓名</label>
-	 					<span>张锦城</span>
-	 					<label>学    历</label>
-	 					<span>大专	</span><br/>
-	 					<label>联系方式：</label>
-	 					<a style="color:#fff;" href="tel:15011838896">15011838896</a><br/>
-	 					<label>邮    箱：</label>
-	 					<a style="color:#fff;" href="mailto:xdl_gz05@163.com  ">xdl_gz05@163.com</a>
-					</p>
+					
+					<div class="clearfix">
+						<p style="width:200px;float: left;margin-left: 160px;margin-right: 160px;">
+		 					<label>联系方式：</label>
+		 					<a style="color:#fff;" href="tel:15011838896">15011838896</a><br/>
+		 					<label>邮    箱：</label>
+		 					<a style="color:#fff;" href="mailto:xdl_gz05@163.com  ">xdl_gz05@163.com</a>
+						</p>
+						<p style="width:200px;float: left;">	
+		 					<label>姓名</label>
+		 					<span>张锦城</span><br/>
+		 					<label>学    历</label>
+		 					<span>大专	</span><br/>
+						</p>
+					</div>
 				</div>	
 
 				<div class="box">
@@ -213,6 +217,16 @@
 						<span>广州兄弟连IT教育</span><br/>
 						<label>专    业：</label>
 						<span>php</span>
+					</p>
+				</div>
+				<div class="box">
+					<h2 style="text-align: center;">自我介绍</h2>
+					<h3 style="text-align: center">安静下来做事的人,有前端基础,大量的P图</h3>
+					<p>
+						熟练掌握PS和CDR，在过去的一年里我做了大量的P图、茶和鞋的效果图以及部分设计，我有大量作品可展示并能现场做图测试并有前端基础。
+	         
+	              		我觉得自己是一个能安静下来做事的人，这次想跳槽，希望能找一家我喜欢和喜欢我的公司并贡献自己的能量。	
+
 					</p>
 				</div>
 			</div>
